@@ -11,7 +11,7 @@ server.get('/search', function(req,res){
  var in_var = Number(req.query.var1) ;
  res.json({ok:true,message:'Square is '+(in_var*in_var)})
 });
-server.use("/", express.static('public'));
+server.use("/", express.static('index.html'));
 server.listen(8000,function(){
 	console.log('Listening on localhost:8000')
 });
